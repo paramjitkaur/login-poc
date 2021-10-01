@@ -54,10 +54,11 @@ const Login = (props) => {
     props.updateTitle("Register");
   };
   return (
-    <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-      <form>
+    <div className="login-card">
+      <img alt="logo" className="logo" src="../../../company-logo.png"/>
+      <div className="header-title">LogIn to MyApp</div>
+      <form className="login-form">
         <div className="form-group text-left">
-          <label htmlFor="exampleInputEmail1">Email address</label>
           <input
             type="email"
             className="form-control"
@@ -72,7 +73,6 @@ const Login = (props) => {
           </small>
         </div>
         <div className="form-group text-left">
-          <label htmlFor="exampleInputPassword1">Password</label>
           <input
             type="password"
             className="form-control"

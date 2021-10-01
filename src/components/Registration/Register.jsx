@@ -66,45 +66,42 @@ function RegistrationForm(props) {
         }
     }
     return(
-        <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-            <form>
+        <div className="register-card">
+            <img alt="logo" className="logo" src="../../../company-logo.png"/>
+            <div className="header-title">Register to MyApp</div>
+            <form className="register-form">
             <div className="form-group text-left">
-                <label htmlFor="exampleFirstName">First Name</label>
                 <input 
                        className="form-control" 
                        id="FirstName" 
                        aria-describedby="FirstNameHelp" 
-                       placeholder="Enter First Name" 
+                       placeholder="First Name" 
                        value={state.firstName}
                        onChange={handleChange}
                 />
                 </div>
                 <div className="form-group text-left">
-                <label htmlFor="exampleInputLastName">Last Name</label>
                 <input 
                        className="form-control" 
                        id="lastName" 
                        aria-describedby="lastNameHelp" 
-                       placeholder="Enter Last Name" 
+                       placeholder="Last Name" 
                        value={state.lastName}
                        onChange={handleChange}
                 />
-                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div className="form-group text-left">
-                <label htmlFor="exampleInputEmail1">Email address</label>
                 <input type="email" 
                        className="form-control" 
                        id="email" 
                        aria-describedby="emailHelp" 
-                       placeholder="Enter email" 
+                       placeholder="Email" 
                        value={state.email}
                        onChange={handleChange}
                 />
-                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="emailHelp" className="text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div className="form-group text-left">
-                    <label htmlFor="exampleInputPassword1">Password</label>
                     <input type="password" 
                         className="form-control" 
                         id="password" 
@@ -114,7 +111,6 @@ function RegistrationForm(props) {
                     />
                 </div>
                 <div className="form-group text-left">
-                    <label htmlFor="exampleInputPassword1">Confirm Password</label>
                     <input type="password" 
                         className="form-control" 
                         id="confirmPassword" 
@@ -125,7 +121,7 @@ function RegistrationForm(props) {
                 </div>
                 <button 
                     type="submit" 
-                    className="btn btn-primary"
+                    className="btn-primary"
                     onClick={handleSubmitClick}
                 >
                     Register

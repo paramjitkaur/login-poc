@@ -15,7 +15,8 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Header title={title}/>
+      <div className="layout">
+      {/* <Header title={title}/> */}
         <div className="container d-flex align-items-center flex-column">
           <Switch>
             <Route path="/" exact={true}>
@@ -32,6 +33,7 @@ function App() {
             </PrivateRoute>
           </Switch>
           <AlertComponent errorMessage={errorMessage} hideError={updateErrorMessage}/>
+        </div>
         </div>
     </div>
     </Router>
